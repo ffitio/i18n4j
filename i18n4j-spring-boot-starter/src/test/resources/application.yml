@@ -1,0 +1,7 @@
+carbon:
+  i18n:
+    useCodeAsDefaultMessage: true
+    fallbackLanguageOnly: true
+    datasource:
+      index: local
+      source: local

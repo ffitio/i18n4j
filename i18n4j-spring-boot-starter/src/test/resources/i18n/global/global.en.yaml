@@ -1,0 +1,3 @@
+http:
+    # 服务器异常
+    serverError: Internal Server Error

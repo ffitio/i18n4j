@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=io.ffit.carbon.i18n4j.springboot.autoconfigure.I18nAutoConfiguration
