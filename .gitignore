@@ -41,3 +41,6 @@ target
 
 # system ignore
 .DS_Store
+
+# flattened pom
+.flattened-pom.xml

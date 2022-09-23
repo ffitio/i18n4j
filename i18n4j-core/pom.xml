@@ -10,11 +10,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>i18n4j-core</artifactId>
-    <version>{revision}</version>
+    <version>${revision}</version>
     <packaging>jar</packaging>
 
     <url>https://i18n4j.ffit.io</url>
-    <name>i18n4j</name>
+    <name>i18n4j-core</name>
     <description>a Java internationalization components</description>
 
     <licenses>
@@ -25,7 +25,7 @@
     </licenses>
 
     <developers>
-        <developer>g
+        <developer>
             <name>ffit</name>
             <email>master@ffit.io</email>
             <id>ffitio</id>
@@ -64,79 +64,4 @@
             <artifactId>junit-jupiter-engine</artifactId>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!-- javadoc -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.4.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <additionalJOption>-Xdoclint:none</additionalJOption>
-                    <failOnError>false</failOnError>
-                </configuration>
-            </plugin>
-
-            <!-- resources -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- java source -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source>
-                    <target>${maven.compiler.target}</target>
-                    <showWarnings>true</showWarnings>
-                </configuration>
-            </plugin>
-
-            <!-- sign -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.0.1</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
-    <distributionManagement>
-        <repository>
-            <id>maven-public</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
-    </distributionManagement>
-
 </project>

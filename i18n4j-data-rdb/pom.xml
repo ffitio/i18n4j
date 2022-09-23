@@ -5,11 +5,42 @@
     <parent>
         <artifactId>i18n4j-parent</artifactId>
         <groupId>io.ffit.carbon</groupId>
-        <version>1.0.0</version>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>i18n4j-data-rdb</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <url>https://i18n4j.ffit.io</url>
+    <name>i18n4j-data-rdb</name>
+    <description>RDB data source adaptor for i18n4j</description>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>ffit</name>
+            <email>master@ffit.io</email>
+            <id>ffitio</id>
+            <roles>
+                <role>Owner</role>
+                <role>Committer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/ffitio/i18n4j</url>
+        <connection>scm:git:git://github.com/ffitio/i18n4j.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:ffitio/i18n4j.git</developerConnection>
+    </scm>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -38,5 +69,4 @@
             <version>${HikariCP.version}</version>
         </dependency>
     </dependencies>
-
 </project>
