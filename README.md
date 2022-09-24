@@ -14,13 +14,13 @@ Add the dependency to your pom.xml file:
 <dependency>
     <groupId>io.ffit.carbon</groupId>
     <artifactId>i18n4j-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 
 <dependency>
     <groupId>io.ffit.carbon</groupId>
     <artifactId>i18n4j-data-local</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
 </dependency>
 ```
 

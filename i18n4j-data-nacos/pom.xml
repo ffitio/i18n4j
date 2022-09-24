@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>i18n4j-data-nacos</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <url>https://i18n4j.ffit.io</url>
